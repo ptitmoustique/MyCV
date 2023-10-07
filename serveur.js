@@ -18,6 +18,21 @@ app.get("/js", (req, res) => {
     res.sendFile(filePath);
 });
 
+app.get("/font", (req, res) => {
+  const filePath = path.join(__dirname, "font/MajorMonoDisplay-Regular.ttf");
+  res.sendFile(filePath);
+});
+
+app.get("/img", (req, res) => {
+  const filePath = path.join(__dirname, "img/myPicture.png");
+  res.sendFile(filePath);
+});
+
+app.get("/svg", (req, res) => {
+  const filePath = path.join(__dirname, "SVG/svgBtn.svg");
+  res.sendFile(filePath);
+});
+
 app.listen(port, () => {
   console.log(`Serveur Express en cours d'exécution sur le port ${port}`);
 });

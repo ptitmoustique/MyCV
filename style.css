@@ -1,4 +1,110 @@
+:root {
+  /* palette 1 */
+  --P1couleur1: #27374d;
+  --P1couleur2: #526d82;
+  --P1couleur3: #9db2bf;
+  --P1couleur4: #dde6ed;
+  /* palette 2 */
+  --P2couleur1: #f7fd04;
+  --P2couleur2: #f9b208;
+  --P2couleur3: #f98404;
+  --P2couleur4: #fc5404;
+}
+
+@font-face {
+  font-family: "Major Mono Display";
+  src: url("/font");
+}
+
 body {
-    margin: 0;
-    padding: 0;
+  padding: 0;
+  margin: 0;
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 250vh;
+  font-family: "Major Mono Display";
+}
+
+::-webkit-scrollbar {
+  width: 0em;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border: transparent;
+}
+
+.welcomes {
+  background-color: var(--P1couleur1);
+  width: 100vw;
+  height: 100vh;
+  box-shadow: 0px -31px 30px 0px rgba(0, 0, 0, 0.4) inset;
+}
+
+.title {
+  display: flex;
+  width: 13vw;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: var(--P1couleur4);
+  text-align: center;
+  font-size: 9vh;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  white-space: nowrap;
+}
+
+.picture {
+  width: 71%;
+  height: 100%;
+  flex-shrink: 0;
+  background-image: url("/img");
+  background-position: 0% -80vh;
+  background-repeat: no-repeat;
+  background-size: 154vh;
+  position: absolute;
+  top: 0%;
+  left: 7%;
+  filter: grayscale(100%);
+}
+
+.BtnDiscover {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  top: 9%;
+  left: 64%;
+}
+
+.BtnDiscover p {
+  color: var(--P1couleur4);
+  text-align: center;
+  font-size: 2.4vw;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+#BtnDiscover {
+    width: 11vw;
+    height: 11vw;
+    flex-shrink: 0;
+    background-image: url("/svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
