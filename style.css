@@ -78,6 +78,7 @@ body {
   top: 0%;
   left: 7%;
   filter: grayscale(100%);
+  transition: 0.5s;
 }
 
 .BtnDiscover {
@@ -126,16 +127,20 @@ body {
   position: absolute;
   display: flex;
   width: 100vw;
-  height: 108px;
+  height: 6.5vw;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
   overflow: hidden;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: var(--P1couleur2);
+  backdrop-filter: blur(20px);
 }
 
 .text {
   text-align: center;
-  font-size: 85px;
+  font-size: 5vw;
   font-style: normal;
   font-weight: 1;
   line-height: normal;
@@ -148,15 +153,15 @@ body {
 }
 
 .scrollingText span:nth-child(1) {
-  -webkit-text-stroke: 5px var(--P2couleur3);
+  -webkit-text-stroke: 0.3vw var(--P2couleur3);
 }
 
 .scrollingText span:nth-child(2) {
-  -webkit-text-stroke: 5px var(--P1couleur4);
+  -webkit-text-stroke: 0.3vw var(--P1couleur4);
 }
 
 .scrollingText span:nth-child(3) {
-  -webkit-text-stroke: 5px var(--P2couleur3);
+  -webkit-text-stroke: 0.3vw var(--P2couleur3);
 }
 
 @keyframes scrollingText {
