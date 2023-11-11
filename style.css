@@ -218,6 +218,10 @@ main p {
   justify-content: space-around;
 }
 
+.CompetenceDeCour {
+  padding-right: 10vh;
+}
+
 .formation p {
   text-align: right;
 }
