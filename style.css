@@ -22,22 +22,23 @@ body {
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
   overflow-y: scroll;
+  overflow-x: hidden;
   width: 100vw;
   height: 250vh;
   font-family: "Major Mono Display";
 }
 
-::-webkit-scrollbar {
-  width: 0em;
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: var(--P1couleur1);
 }
 
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: transparent;
-  border: transparent;
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: var(--P1couleur4);
 }
 
 header {
