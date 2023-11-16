@@ -20,7 +20,7 @@ header.addEventListener("mouseout", (e) => {
 BtnDiscover.addEventListener("click", () => {
   window.scrollTo({
     top: window.innerHeight,
-    left: 100,
+    left: 0,
     behavior: "smooth",
   });
 });
@@ -40,4 +40,9 @@ window.addEventListener("scroll", () => {
 window.addEventListener("DOMContentLoaded", () => {
   formation.style.transform = `translate(-${window.innerHeight/sdd}%)`
   competence.style.transform = `translate(${window.innerHeight/sdd}%)`
+  window.scrollTo({
+    top: 1,
+    left: 0,
+    behavior: "smooth",
+  });
 })
